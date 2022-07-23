@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.row-above, .row-below{
+    display: flex;
+}
+
+.div-image-daniel, .div-image-jonathan, .div-image-jeanette, .div-image-patrick, .div-image-kira{
+    display: flex;
+}
+
+.image-daniel, .image-jonathan, .image-jeanette, .image-patrick, .image-kira{
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+}
+
+.image-daniel{
+    border: solid 2px hsl(263, 100%, 68%);
+}
+
+.image-patrick{
+    border: solid 2px hsl(263, 64%, 39%);
+}
+
+.div-daniel{
+    background: hsl(263, 55%, 52%);
+    width: fit-content;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 370px 0px;
+    padding: 1.2rem 2rem;
+    border-radius: .5rem;
+    margin-right: 2rem;
+    box-shadow: 7px 7px 15px 5px rgba(94, 94, 94, 25%);
+}
+
+.title-daniel, .title-jonathan, .title-patrick{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.div-pair-i-received-daniel, .div-pair-the-team-jonathan, .div-pair-an-overall-jeanette, .div-pair-awesome-patrick, .div-pair-such-kira{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle-daniel, .subtitle-jonathan, .subtitle-jeanette, .subtitle-patrick, .subtitle-kira{
+    color: hsl(0, 0%, 81%);
+    font-size: 13px;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+
+.pair-i-received-daniel, .pair-the-team-jonathan, .pair-awesome-patrick{
+    color: #FFF;
+    font-size: 21px;
+}
+
+.pair-i-was-daniel, .pair-i-started-jonathan, .pair-the-staff-patrick{
+    color: hsl(0, 0%, 81%);
+    font-size: 13px;
+    line-height: 1.2rem;
+}
+
+.div-jonathan{
+    background: hsl(217, 19%, 35%);
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin-right: 2rem;
+    box-shadow: 7px 7px 15px 5px rgba(94, 94, 94, 25%);
+}
+
+.div-jeanette{
+    background: #FFF;
+    margin-top: 2rem;
+    padding: 1.5rem 2.5rem 2rem 1.5rem;
+    margin-right: 2rem;
+    border-radius: .5rem;
+    box-shadow: -5px -5px 15px 5px rgba(94, 94, 94, 10%);
+}
+
+.title-jeanette, .title-kira{
+    color: hsl(219, 29%, 14%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pair-an-overall-jeanette, .pair-suck-kira{
+    color: hsl(219, 29%, 14%);
+    font-size: 21px;
+}
+
+.pair-thank-you-jeanette, .pair-before-kira{
+    color: hsl(219, 29%, 14%, 70%);
+}
+
+.div-patrick{
+    background: hsl(219, 29%, 14%);
+    margin-top: 2rem;
+    padding: 1.2rem;
+    margin-right: 2rem;
+    border-radius: .5rem;
+    box-shadow: 7px 7px 15px 5px rgba(94, 94, 94, 25%);
+}
+
+.div-kira{
+    background: #FFF;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 15px 5px rgba(94, 94, 94, 10%);
+}
+
+.pair-i-started-jonathan-mobile{
+    display: none;
+    color: hsl(0, 0%, 81%);
+    font-size: 13px;
+    line-height: 1.2rem;
+}
+
+.pair-before-kira-mobile, .pair-thank-you-jeanette-mobile{
+    color: hsl(219, 29%, 14%, 70%);
+    display: none;
+    font-size: 13px;
+    line-height: 1.2rem;
+}
+
+.pair-suck-kira-mobile, .pair-an-overall-jeanette-mobile{
+    display: none;
+    color: hsl(219, 29%, 14%);
+    font-size: 21px;
+}
+
+.pair-the-team-jonathan-mobile{
+    display: none;
+    color: #FFF;
+    font-size: 21px;
+}
+
+
+
+@media only screen and (max-width: 1174px){
+    main{
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    .div-kira{
+        margin-top: 2rem;
+        max-width: 840px;
+        margin-right: 2rem;
+    }
+
+    .pair-before-kira, .pair-suck-kira, .pair-the-team-jonathan, .pair-an-overall-jeanette, .pair-thank-you-jeanette{
+        display: none;
+    }
+
+    .pair-before-kira-mobile, .pair-suck-kira-mobile, .pair-the-team-jonathan-mobile, .pair-an-overall-jeanette-mobile, .pair-thank-you-jeanette-mobile{
+        display: flex;
+    }
+}
+
+
+@media only screen and (max-width: 934px){
+
+    .row-above, .row-below{
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .div-jonathan{
+        max-width: 550px;
+        margin-top: 1.5rem;
+    }
+
+    .div-kira{
+        margin-top: 2rem;
+        max-width: 550px;
+    }
+
+    .pair-i-started-jonathan-mobile{
+        display: flex;
+    }
+
+    .pair-i-started-jonathan{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 578px){
+
+    .pair-i-received-daniel, .pair-the-team-jonathan-mobile, .pair-an-overall-jeanette-mobile,
+    .pair-awesome-patrick, .pair-suck-kira-mobile{
+        font-size: 17px;
+    }
+
+    .pair-i-was-daniel, .pair-i-started-jonathan-mobile, .pair-thank-you-jeanette-mobile, 
+    .pair-the-staff-patrick, .pair-before-kira-mobile{
+        font-size: 10px;
+    }
+
+}
+
